@@ -21,7 +21,7 @@ const sendVeriryEmail = async (username, email, id) => {
     html:
       "<p>Hey \n" +
       username +
-      'Please click verify link for verification <button> <a href="http://localhost:8000/api/v1/users/verify?id=' +
+      'Please click verify link for verification <button> <a href="https://madeforme-backend.onrender.com/api/v1/users/verify?id=' +
       id +
       '">Verify</a></button> your mail </p>',
   };
