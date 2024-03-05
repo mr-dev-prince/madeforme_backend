@@ -4,7 +4,11 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: "https://madeforme.netlify.app/",
+};
+app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
 
