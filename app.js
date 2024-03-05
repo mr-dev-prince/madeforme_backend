@@ -6,7 +6,7 @@ import cookieParser from "cookie-parser";
 const app = express();
 
 const corsOptions = {
-  origin: "https://madeforme.netlify.app/",
+  origin: "https://madeforme.netlify.app",
 };
 app.use(cors(corsOptions));
 app.use(cookieParser());
