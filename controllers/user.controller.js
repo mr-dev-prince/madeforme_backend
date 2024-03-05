@@ -94,7 +94,7 @@ export const setVerify = async (req, res) => {
     console.log(" this is access token :  ", accessToken);
     console.log(" this is refresh  token :  ", refreshToken);
     res.cookie("accessToken", accessToken, { httpOnly: true });
-    res.cookie("refereshToken", refreshToken, { httpOnly: true });
+    res.cookie("refreshToken", refreshToken, { httpOnly: true });
 
     res.json("your email is verified now  ");
     return true;
